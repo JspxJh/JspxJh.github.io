@@ -31,7 +31,55 @@
     </video>
 
     <!-- Audio sin controles, se reproduce automáticamente -->
-    <audio src="video/manuel.mp3" autoplay loop style="display: none;"></audio>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Flower</title>
+    <style>
+      /* Asegura que el video ocupe toda la pantalla */
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+
+      /* Establece el video para que ocupe toda la pantalla */
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Mantiene la proporción sin distorsionar */
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- Video con su propio audio -->
+    <video src="video/mi_video.mp4" autoplay loop muted>
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+
+
+  </head>
+  <body class="container">
+    <audio src="video/manuel.mp3" autoplay></audio>
+
+    <h1 class="titulo">
+      Mi amor, mi reina hermosa, no tienes idea de cuánto te quiero. Eres mi todo, hoy quiero que este día sea especial para ti, cada momento a tu lado es único <3333
+    </h1>
+
+    <div class="night"></div>
+    <div class="flowers"></div>
+
+    <script src="anim.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
 
     <h1 class="titulo">
       Mi amor, mi reina hermosa, no tienes idea de cuánto te quiero. Eres mi todo, hoy quiero que este día sea especial para ti, cada momento a tu lado es único <3333
